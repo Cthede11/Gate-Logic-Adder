@@ -78,33 +78,17 @@ class NotGate(Gate):
 # Inputs
 input1 = 1
 input2 = 1
-input3 = 1
-input4 = 1
-input5 = 1
-input6 = 1
-input7 = 1
-input8 = 1
-input9 = 1
-input10 = 1
-input11 = 1
-input12 = 1
-input13 = 1
-input14 = 1
+carry_in = 0
 
-#-----------------------------------------------
-# HALF ADDER
 # XOR gate for input1 and input2
 xor_gate1 = XorGate("XOR1")
 xor_gate1.set_input(input1, input2)
-out1 = xor_gate1.get_output()
-print("Output1: ", out1)
+sum_out = xor_gate1.get_output()
 
 # AND gate for input1 and input2
 and_gate1 = AndGate("AND1")
 and_gate1.set_input(input1, input2)
 carry_out1 = and_gate1.get_output()
-
-#-----------------------------------------------
 
 # AND gate for sum_out and carry_in
 and_gate2 = AndGate("AND2")
