@@ -134,6 +134,7 @@ def Adder(inputList, sumList):
 
 def takeUserInput():
     # accidentally made the entire thing work on one input list
+    print("Enter the variables to be added, with every single integer separated by commas")
     userInput1 = input("Enter the first variable: ")
     userInput2 = input("Enter the second variable: ")
     userInputList1 = userInput1.split(",")
