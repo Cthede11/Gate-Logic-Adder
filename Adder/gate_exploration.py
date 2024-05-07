@@ -78,18 +78,6 @@ class NotGate(Gate):
 # Inputs
 input1 = 1
 input2 = 1
-input3 = 1
-input4 = 1
-input5 = 1
-input6 = 1
-input7 = 1
-input8 = 1
-input9 = 1
-input10 = 1
-input11 = 1
-input12 = 1
-input13 = 1
-input14 = 1
 
 #-----------------------------------------------
 # HALF ADDER
