@@ -127,13 +127,12 @@ def Adder(inputList, sumList):
         fullAdder(inputList, sumList, x, y)
         x += 2
         y += 2
-    print(sumList)
     sumList.reverse()
     return sumList
 
 
 def takeUserInput():
-    # accidentally made the entire thing work on one input list
+    # made the entire thing work on one input list
     print("Enter the variables to be added, with every single integer separated by commas")
     userInput1 = input("Enter the first variable: ")
     userInput2 = input("Enter the second variable: ")
@@ -144,10 +143,16 @@ def takeUserInput():
     # combine the two lists into one, iteratively
     finInputList = [item for sublist in zip(userInputList1, userInputList2) for item in sublist]
     finInputList = [int(i) for i in finInputList]
-    print(finInputList)
     return finInputList
 
 
-sumList = []
-Adder(takeUserInput(), sumList)
-print(*sumList)
+# Main Program
+while True:
+    sumList = []
+    Adder(takeUserInput(), sumList)
+    print("Sum:", *sumList)
+    quitInput = input("Press 'q' to quit, or any other key to continue: ")
+    if quitInput == "q" or quitInput == "Q":
+        break
+    else:
+        pass
